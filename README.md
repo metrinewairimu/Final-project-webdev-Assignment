@@ -3,6 +3,13 @@
 ## Project Overview
 Traveler's Compass Kenya is a comprehensive, responsive travel website showcasing Kenya's incredible wildlife, landscapes, and cultural experiences. This multipage website demonstrates modern web development practices using HTML5, CSS3, and JavaScript, specifically designed to meet academic assignment requirements.
 
+## 🌐 Live Website Link
+
+You can view the deployed website here:  
+**[Traveler's Compass Kenya - Live Site](https://your-live-site-link.com)**
+
+*(Replace the above URL with your actual live deployment link, e.g., Netlify, Vercel, or GitHub Pages.)*
+
 ## 🎯 Assignment Requirements Met
 
 ### ✅ Multipage Website Design (5 pages)
@@ -235,5 +242,3 @@ Traveler's Compass Kenya is a comprehensive, responsive travel website showcasin
 **Deployment**:  Netlify
 
 ---
-
-
