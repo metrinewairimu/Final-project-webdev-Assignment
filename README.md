@@ -6,9 +6,9 @@ Traveler's Compass Kenya is a comprehensive, responsive travel website showcasin
 ## 🌐 Live Website Link
 
 You can view the deployed website here:  
-**[Traveler's Compass Kenya - Live Site](https://your-live-site-link.com)**
+**[Traveler's Compass Kenya - Live Site](https://travellerscompasskenya.netlify.app/)**
 
-*(Replace the above URL with your actual live deployment link, e.g., Netlify, Vercel, or GitHub Pages.)*
+
 
 ## 🎯 Assignment Requirements Met
 
