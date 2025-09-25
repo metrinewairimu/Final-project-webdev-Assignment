@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya Destinations - Traveler's Compass Kenya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="compass-icon">🧭</span>
+                Traveler's Compass Kenya
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="destinations.html" class="nav-link active">Destinations</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header destinations-header">
+        <div class="container">
+            <h1>Discover Kenya's Wonders</h1>
+            <p>From the Maasai Mara to Mount Kenya, explore the diverse beauty of East Africa</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="search-filter">
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search Kenya destinations..." />
+                <button type="button" id="searchBtn">🔍</button>
+            </div>
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label>Filter by Region:</label>
+                    <div class="filter-buttons" id="regionFilters">
+                        <button class="filter-btn active" data-filter="all">All Regions</button>
+                        <button class="filter-btn" data-filter="central">Central Kenya</button>
+                        <button class="filter-btn" data-filter="rift-valley">Rift Valley</button>
+                        <button class="filter-btn" data-filter="coast">Coast</button>
+                        <button class="filter-btn" data-filter="northern">Northern Kenya</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label>Filter by Experience:</label>
+                    <div class="filter-buttons" id="typeFilters">
+                        <button class="filter-btn active" data-filter="all">All Types</button>
+                        <button class="filter-btn" data-filter="safari">Safari</button>
+                        <button class="filter-btn" data-filter="mountain">Mountain</button>
+                        <button class="filter-btn" data-filter="beach">Beach</button>
+                        <button class="filter-btn" data-filter="cultural">Cultural</button>
+                        <button class="filter-btn" data-filter="adventure">Adventure</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Gallery -->
+    <section class="destinations-gallery">
+        <div class="container">
+            <div class="destinations-grid" id="destinationsGrid">
+                <!-- Maasai Mara -->
+                <article class="destination-card" data-region="rift-valley" data-type="safari" data-name="maasai mara national reserve">
+                    <a href="maasai-mara.html">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Maasai Mara">
+                            <div class="card-overlay">
+                                <span class="explore-btn">Explore Maasai Mara</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Maasai Mara National Reserve</h3>
+                            <p>Kenya's most famous wildlife reserve, home to the Great Migration and the Big Five.</p>
+                            <div class="card-tags">
+                                <span class="tag safari">Safari</span>
+                                <span class="tag cultural">Cultural</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Mount Kenya -->
+                <article class="destination-card" data-region="central" data-type="mountain" data-name="mount kenya national park">
+                    <a href="#" onclick="showDestinationInfo('Mount Kenya')">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/1670734/pexels-photo-1670734.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mount Kenya">
+                            <div class="card-overlay">
+                                <span class="explore-btn">Explore Mount Kenya</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Mount Kenya National Park</h3>
+                            <p>Africa's second-highest peak offering challenging climbs and pristine alpine landscapes.</p>
+                            <div class="card-tags">
+                                <span class="tag mountain">Mountain</span>
+                                <span class="tag adventure">Adventure</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Amboseli -->
+                <article class="destination-card" data-region="rift-valley" data-type="safari" data-name="amboseli national park">
+                    <a href="#" onclick="showDestinationInfo('Amboseli')">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/1670732/pexels-photo-1670732.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Amboseli">
+                            <div class="card-overlay">
+                                <span class="explore-btn">Explore Amboseli</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Amboseli National Park</h3>
+                            <p>Famous for large elephant herds with Mount Kilimanjaro providing a stunning backdrop.</p>
+                            <div class="card-tags">
+                                <span class="tag safari">Safari</span>
+                                <span class="tag mountain">Mountain Views</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Diani Beach -->
+                <article class="destination-card" data-region="coast" data-type="beach" data-name="diani beach">
+                    <a href="#" onclick="showDestinationInfo('Diani Beach')">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Diani Beach">
+                            <div class="card-overlay">
+                                <span class="explore-btn">Explore Diani Beach</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Diani Beach</h3>
+                            <p>Kenya's premier beach destination with pristine white sand and crystal-clear waters.</p>
+                            <div class="card-tags">
+                                <span class="tag beach">Beach</span>
+                                <span class="tag adventure">Water Sports</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Lake Nakuru -->
+                <article class="destination-card" data-region="rift-valley" data-type="safari" data-name="lake nakuru national park">
+                    <a href="#" onclick="showDestinationInfo('Lake Nakuru')">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/2835562/pexels-photo-2835562.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Lake Nakuru">
+                            <div class="card-overlay">
+                                <span class="explore-btn">Explore Lake Nakuru</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Lake Nakuru National Park</h3>
+                            <p>Famous for millions of flamingos and home to both black and white rhinos.</p>
+                            <div class="card-tags">
+                                <span class="tag safari">Safari</span>
+                                <span class="tag cultural">Bird Watching</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Samburu -->
+                <article class="destination-card" data-region="northern" data-type="safari" data-name="samburu national reserve">
+                    <a href="#" onclick="showDestinationInfo('Samburu')">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/1007657/pexels-photo-1007657.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Samburu">
+                            <div class="card-overlay">
+                                <span class="explore-btn">Explore Samburu</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Samburu National Reserve</h3>
+                            <p>Rugged wilderness home to unique species like Grevy's zebra and reticulated giraffe.</p>
+                            <div class="card-tags">
+                                <span class="tag safari">Safari</span>
+                                <span class="tag cultural">Cultural</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Nairobi -->
+                <article class="destination-card" data-region="central" data-type="cultural" data-name="nairobi city">
+                    <a href="#" onclick="showDestinationInfo('Nairobi')">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Nairobi">
+                            <div class="card-overlay">
+                                <span class="explore-btn">Explore Nairobi</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Nairobi City</h3>
+                            <p>Kenya's vibrant capital with unique attractions like Nairobi National Park within city limits.</p>
+                            <div class="card-tags">
+                                <span class="tag cultural">Cultural</span>
+                                <span class="tag safari">Urban Safari</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Tsavo -->
+                <article class="destination-card" data-region="coast" data-type="safari" data-name="tsavo national park">
+                    <a href="#" onclick="showDestinationInfo('Tsavo')">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Tsavo">
+                            <div class="card-overlay">
+                                <span class="explore-btn">Explore Tsavo</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Tsavo National Parks</h3>
+                            <p>Kenya's largest national park, famous for red elephants and diverse landscapes.</p>
+                            <div class="card-tags">
+                                <span class="tag safari">Safari</span>
+                                <span class="tag adventure">Adventure</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <h3>No destinations found</h3>
+                <p>Try adjusting your search or filter criteria.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">↑</button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Traveler's Compass Kenya</h3>
+                    <p>Your trusted guide to Kenya's extraordinary wildlife, landscapes, and cultural experiences.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📹</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Safari Tips</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kenya Destinations</h4>
+                    <ul>
+                        <li><a href="#">Maasai Mara</a></li>
+                        <li><a href="#">Amboseli</a></li>
+                        <li><a href="#">Mount Kenya</a></li>
+                        <li><a href="#">Diani Beach</a></li>
+                    </ul>
+                </div>
+               <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📧 wairimu.metrine5@gmail.com</p>
+                    <p>📞 +254 717 519 562</p>
+                    <p>📍 Nairobi, Kenya</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Traveler's Compass Kenya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/destinations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

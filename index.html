@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveler's Compass Kenya - Discover the Heart of Africa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="compass-icon">🧭</span>
+                Traveler's Compass Kenya
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="destinations.html" class="nav-link">Destinations</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Image Slider -->
+    <section class="hero" id="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=1600')">
+                <div class="hero-content">
+                    <h1>Discover the Heart of Africa</h1>
+                    <p>Experience Kenya's breathtaking wildlife, stunning landscapes, and rich Maasai culture in the land where safari dreams come true.</p>
+                    <a href="destinations.html" class="hero-btn">Start Your Safari</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.pexels.com/photos/1670732/pexels-photo-1670732.jpeg?auto=compress&cs=tinysrgb&w=1600')">
+                <div class="hero-content">
+                    <h1>Maasai Mara Awaits</h1>
+                    <p>Witness the Great Migration and encounter the Big Five in one of Africa's most spectacular wildlife reserves.</p>
+                    <a href="destinations.html" class="hero-btn">Explore Maasai Mara</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.pexels.com/photos/1670734/pexels-photo-1670734.jpeg?auto=compress&cs=tinysrgb&w=1600')">
+                <div class="hero-content">
+                    <h1>Mount Kenya Adventures</h1>
+                    <p>Challenge yourself with Africa's second-highest peak and discover pristine alpine landscapes.</p>
+                    <a href="destinations.html" class="hero-btn">Plan Your Trek</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <button class="slider-btn prev-btn" id="prevBtn">‹</button>
+            <button class="slider-btn next-btn" id="nextBtn">›</button>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="featured-destinations">
+        <div class="container">
+            <h2>Featured Kenyan Destinations</h2>
+            <p class="section-subtitle">Discover the wonders of Kenya's diverse landscapes</p>
+            <div class="destinations-grid">
+                <article class="destination-card">
+                    <a href="maasai-mara.html">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Maasai Mara">
+                            <div class="card-overlay">
+                                <span class="explore-btn">Explore Maasai Mara</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Maasai Mara National Reserve</h3>
+                            <p>Home to the Great Migration and the Big Five. Experience Kenya's most famous wildlife sanctuary.</p>
+                            <span class="card-tag">Wildlife Safari</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="destination-card">
+                    <a href="#" onclick="showDestinationInfo('Mount Kenya')">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/1670734/pexels-photo-1670734.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mount Kenya">
+                            <div class="card-overlay">
+                                <span class="explore-btn">Explore Mount Kenya</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Mount Kenya National Park</h3>
+                            <p>Africa's second-highest peak offers challenging climbs and stunning alpine scenery.</p>
+                            <span class="card-tag">Mountain Adventure</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="destination-card">
+                    <a href="#" onclick="showDestinationInfo('Amboseli')">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/1670732/pexels-photo-1670732.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Amboseli">
+                            <div class="card-overlay">
+                                <span class="explore-btn">Explore Amboseli</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Amboseli National Park</h3>
+                            <p>Famous for large elephant herds with the majestic Mount Kilimanjaro as backdrop.</p>
+                            <span class="card-tag">Elephant Paradise</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="destination-card">
+                    <a href="#" onclick="showDestinationInfo('Diani Beach')">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Diani Beach">
+                            <div class="card-overlay">
+                                <span class="explore-btn">Explore Diani Beach</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Diani Beach</h3>
+                            <p>Kenya's pristine white sand beaches along the Indian Ocean coastline.</p>
+                            <span class="card-tag">Beach Paradise</span>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kenya Highlights -->
+    <section class="kenya-highlights">
+        <div class="container">
+            <h2>Why Choose Kenya?</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">🦁</div>
+                    <h3>Big Five Safari</h3>
+                    <p>Encounter lions, elephants, buffalo, leopards, and rhinos in their natural habitat across Kenya's world-renowned national parks.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🌍</div>
+                    <h3>Great Migration</h3>
+                    <p>Witness one of nature's most spectacular events as millions of wildebeest and zebras cross the Mara River.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🏔️</div>
+                    <h3>Diverse Landscapes</h3>
+                    <p>From snow-capped mountains to pristine beaches, Kenya offers incredible geographical diversity in one country.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🎭</div>
+                    <h3>Rich Culture</h3>
+                    <p>Experience authentic Maasai traditions, vibrant local markets, and warm Kenyan hospitality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Travel Stories -->
+    <section class="blog-posts">
+        <div class="container">
+            <h2>Latest Kenya Travel Stories</h2>
+            <p class="section-subtitle">Fresh adventures and insider tips from the field</p>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Safari Tips">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">March 15, 2025</span>
+                        <h3>10 Essential Safari Tips for First-Time Visitors to Kenya</h3>
+                        <p>Everything you need to know for an unforgettable Kenyan safari experience...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Maasai Culture">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">March 12, 2025</span>
+                        <h3>Understanding Maasai Culture: A Respectful Visitor's Guide</h3>
+                        <p>Learn about Kenya's iconic Maasai people and how to engage respectfully with their communities...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Kenya Photography">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">March 10, 2025</span>
+                        <h3>Capturing Kenya: Wildlife Photography Tips and Techniques</h3>
+                        <p>Master the art of wildlife photography in Kenya's stunning national parks...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Connected with Kenya</h2>
+                <p>Get the latest Kenya travel tips, safari updates, and exclusive offers delivered to your inbox.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="newsletter-message" id="newsletter-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">↑</button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Traveler's Compass Kenya</h3>
+                    <p>Your trusted guide to Kenya's extraordinary wildlife, landscapes, and cultural experiences.</p>
+                  
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Safari Tips</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kenya Destinations</h4>
+                    <ul>
+                        <li><a href="#">Maasai Mara</a></li>
+                        <li><a href="#">Amboseli</a></li>
+                        <li><a href="#">Mount Kenya</a></li>
+                        <li><a href="#">Diani Beach</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📧 wairimu.metrine5@gmail.com</p>
+                    <p>📞 +254 717 519 562</p>
+                    <p>📍 Nairobi, Kenya</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Traveler's Compass Kenya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

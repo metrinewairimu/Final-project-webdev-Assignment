@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Traveler's Compass Kenya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="compass-icon">🧭</span>
+                Traveler's Compass Kenya
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="destinations.html" class="nav-link">Destinations</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header contact-header">
+        <div class="container">
+            <h1>Connect With Kenya Experts</h1>
+            <p>Ready to plan your Kenyan adventure? Get in touch with our local safari and travel specialists</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Plan Your Kenya Safari</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">What interests you most? *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Choose your interest...</option>
+                                <option value="safari">Wildlife Safari Planning</option>
+                                <option value="migration">Great Migration Tours</option>
+                                <option value="mountain">Mount Kenya Trekking</option>
+                                <option value="beach">Coastal & Beach Holidays</option>
+                                <option value="culture">Cultural Experiences</option>
+                                <option value="photography">Photography Safaris</option>
+                                <option value="general">General Kenya Travel Info</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Tell us about your dream Kenya experience *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Share your travel dates, group size, interests, and any specific questions about Kenya..." required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our Kenya travel newsletter for safari tips and updates
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <h2>Get In Touch</h2>
+                    
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <div class="info-icon">📧</div>
+                            <div class="info-details">
+                                <h3>Email Us</h3>
+                                <p>wairimu.metrine5@gmail.com</p>
+                                <small>We respond within 24 hours</small>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div class="info-details">
+                                <h3>Call Us (Kenya)</h3>
+                                <p>+254 717 519 562</p>
+                                <small>Mon-Fri, 8AM-6PM EAT</small>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">💬</div>
+                            <div class="info-details">
+                                <h3>WhatsApp</h3>
+                                <p>+254 717 519 562</p>
+                                <small>Quick responses for urgent inquiries</small>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div class="info-details">
+                                <h3>Visit Our Office</h3>
+                                <p>Karen, Nairobi<br>Kenya</p>
+                                <small>By appointment only</small>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">🌐</div>
+                            <div class="info-details">
+                                <h3>Follow Our Kenya Adventures</h3>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="response-times">
+                        <h3>Response Times</h3>
+                        <ul>
+                            <li><strong>Safari Planning:</strong> Within 24 hours</li>
+                            <li><strong>General Inquiries:</strong> Within 12 hours</li>
+                            <li><strong>Emergency Support:</strong> Immediate via WhatsApp</li>
+                            <li><strong>Group Bookings:</strong> Within 48 hours</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Find Us in Nairobi</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <h3>Our Nairobi Office</h3>
+                        <p>Located in the heart of Westlands, close to major safari departure points and the Jomo Kenyatta International Airport.</p>
+                        <div class="map-image">
+                            <img src="https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Nairobi office location" style="width: 100%; border-radius: 8px;">
+                        </div>
+                        <p class="map-note">*This is a placeholder map. In a real implementation, we would integrate with Google Maps for precise location details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>What's the best time to visit Kenya for safari?</h3>
+                    <p>The best time depends on your interests. July-October is ideal for the Great Migration in Maasai Mara, while January-March offers excellent wildlife viewing with fewer crowds and lower prices. The dry seasons (June-October and January-March) generally provide the best game viewing.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Do you offer customized safari packages?</h3>
+                    <p>While we don't directly operate safaris, we work with trusted local partners to help you plan customized experiences. We can connect you with reputable safari operators, recommend accommodations, and provide detailed itineraries based on your interests and budget.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What should I know about Kenya visa requirements?</h3>
+                    <p>Most visitors need a visa to enter Kenya. You can apply for an eVisa online before travel or get a visa on arrival. We recommend checking current requirements with the Kenyan embassy in your country, as regulations can change.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Is it safe to travel to Kenya?</h3>
+                    <p>Kenya is generally safe for tourists, especially in established safari areas and coastal regions. We provide up-to-date safety information and work with experienced local guides who know the areas well. As with any travel, we recommend following standard safety precautions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">↑</button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Traveler's Compass Kenya</h3>
+                    <p>Your trusted guide to Kenya's extraordinary wildlife, landscapes, and cultural experiences.</p>
+                  
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Safari Tips</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kenya Destinations</h4>
+                    <ul>
+                        <li><a href="#">Maasai Mara</a></li>
+                        <li><a href="#">Amboseli</a></li>
+                        <li><a href="#">Mount Kenya</a></li>
+                        <li><a href="#">Diani Beach</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📧 wairimu.metrine5@gmail.com</p>
+                    <p>📞 +254 717 519 562</p>
+                    <p>📍 Nairobi, Kenya</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Traveler's Compass Kenya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/contact.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
